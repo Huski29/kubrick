@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Kubrick</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Torno a Kubrick…</h1>
+<p>Se non succede niente, Kubrick sul Mac non è acceso: accendilo e rifai l’accesso dalla guida.</p>
+</main>
+<script>
+// Facebook sends its login back to an address with a real domain, this one; the page hands it, unchanged, to Kubrick on the Mac.
+// The destination is fixed: nothing in the address can send the browser anywhere else.
+if (/[?&](code|error|error_description)=/.test(location.search)) location.replace('http://localhost:5231/api/social/meta/callback' + location.search)
+</script>
+</body>
+</html>
